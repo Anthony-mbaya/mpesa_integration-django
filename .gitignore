@@ -1,0 +1,26 @@
+# Virtual environment
+myenv/
+venv/
+
+# Compiled files
+__pycache__/
+*.py[cod]
+
+# Django secrets & settings
+.env
+*.sqlite3
+db.sqlite3
+
+# Migrations
+*/migrations/*.pyc
+*/migrations/*.py
+
+# Logs & temp files
+logs/
+*.log
+*.pid
+
+# Byte-compiled & cache files
+*.pyc
+*.pyo
+*.pyd
