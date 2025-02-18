@@ -37,6 +37,8 @@ def stk_push(request):
             """Formats the phone number to the required 254XXXXXXXX format."""
             if phone_number.startswith('0'):
                 phone_number = '254' + phone_number[1:]
+            elif phone_number.startswith('+254'):
+                phone_number = '254' + phone_number[4:]
             elif not phone_number.startswith('254'):
                 phone_number = '254' + phone_number
             return phone_number
